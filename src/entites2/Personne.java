@@ -2,6 +2,8 @@ package entites2;
 
 import entites.AdressePostale;
 
+// TP1
+
 public class Personne {
 
 	public String nom;
