@@ -8,18 +8,18 @@ public class Emprunt {
 	// car même nom que la class
 
 	// constructeur sans paramètre
-	 public Emprunt() {
-	 annee = 2021;
-	 }
+	public Emprunt() {
+		annee = 2021;
+	}
 
 	// constructeur avec paramètre
 	// portée de nvAnnee = boc du constructeur
 	public Emprunt(int nvAnnee) {
 		annee = nvAnnee;
 	}
-	
+
 //	public Emprunt(int annee) {
 //		this.annee = annee;
 //	}
-	
+
 }
