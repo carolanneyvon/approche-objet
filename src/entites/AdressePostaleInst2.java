@@ -2,6 +2,7 @@ package entites;
 
 public class AdressePostaleInst2 {
 
+	// A des varibales d'instance => classe statefull
 	// Le but d'un contructeur est de valoriser les variables d'instance suivantes:
 	private int numeroRue;
 	private String libelleRue;
