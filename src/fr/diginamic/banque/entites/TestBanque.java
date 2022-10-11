@@ -1,6 +1,5 @@
 package fr.diginamic.banque.entites;
 
-import entites.Facture;
 
 public class TestBanque {
 
