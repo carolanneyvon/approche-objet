@@ -2,32 +2,32 @@ package fr.diginamic.banque.entites;
 
 public class CompteRedefintion {
 
-	private int numeroCompte;
-	private double soldeCompte;
+	private int numero;
+	private double solde;
 	
-	public CompteRedefintion(int numeroCompte, double soldeCompte) {
-		this.numeroCompte = numeroCompte;
-		this.soldeCompte = soldeCompte;
+	public CompteRedefintion(int numero, double solde) {
+		this.numero = numero;
+		this.solde = solde;
 	}
 	
-	public int getNumeroCompte() {
-		return numeroCompte;
+	public int getNumero() {
+		return numero;
 	}
 
-	public void setNumeroCompte(int numeroCompte) {
-		this.numeroCompte = numeroCompte;
+	public void setNumeroCompte(int numero) {
+		this.numero = numero;
 	}
 
-	public double getSoldeCompte() {
-		return soldeCompte;
+	public double getSolde() {
+		return solde;
 	}
 
-	public void setSoldeCompte(double soldeCompte) {
-		this.soldeCompte = soldeCompte;
+	public void setSolde(double solde) {
+		this.solde = solde;
 	}
 
 	public String toString() {
-		return "Numéro de compte "+numeroCompte+ ", dont le solde est de "+ soldeCompte +" €";
+		return "Le compte n° "+numero+ ", à un solde de "+ solde +" €";
 	}
 	
 }
