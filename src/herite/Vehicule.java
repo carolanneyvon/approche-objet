@@ -2,11 +2,16 @@ package herite;
 
 public class Vehicule {
 
-	private String marque;
-	private String modele;
+	protected String marque;
+	protected String modele;
 
 	public void demarrer() {
-		// TODO code à implémenter
+		System.out.println("je suis un véhicule et je démarre");
+	}
+	
+	@Override
+	public String toString() {
+		return modele+ " " + marque;
 	}
 
 	public String getMarque() {
