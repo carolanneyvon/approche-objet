@@ -7,7 +7,7 @@ public CompteTaux(int numero, double solde, double taux) {
 	super(numero, solde);
 	this.taux = taux;
 }
- 
+
 @Override
 	public String toString() {
 		return super.toString()+" et un taux à "+taux+"%";

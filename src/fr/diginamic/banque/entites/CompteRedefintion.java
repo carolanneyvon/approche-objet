@@ -9,7 +9,7 @@ public class CompteRedefintion {
 		this.numero = numero;
 		this.solde = solde;
 	}
-	
+		
 	public int getNumero() {
 		return numero;
 	}
