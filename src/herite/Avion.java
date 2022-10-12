@@ -4,11 +4,22 @@ public class Avion extends Vehicule {
 
 	private String matricule;
 
+	//constructeur
+	public Avion(String marque, String modele, String matricule) {
+		super(marque, modele);
+		this.matricule = matricule;
+	}
+	
 	@Override
 	// pour signaler la redefinition d'une méthode
 	public void demarrer() {
 		System.out.println("je suis un avion et je décolle");
 	}
+	
+//	public void decoller() {
+//		demarrer();
+//	}
+	
 	
 	// @Overload
 	// surcharge de la méthode car ajout d'un paramètre
