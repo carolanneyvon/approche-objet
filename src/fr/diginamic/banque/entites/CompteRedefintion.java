@@ -2,8 +2,8 @@ package fr.diginamic.banque.entites;
 
 public class CompteRedefintion {
 
-	private int numero;
-	private double solde;
+	protected int numero;
+	protected double solde;
 	
 	public CompteRedefintion(int numero, double solde) {
 		this.numero = numero;
@@ -26,6 +26,7 @@ public class CompteRedefintion {
 		this.solde = solde;
 	}
 
+	@Override
 	public String toString() {
 		return "Le compte n° "+numero+ ", à un solde de "+ solde +" €";
 	}
