@@ -18,13 +18,13 @@ public class FusionListe {
 		
 		List<String> liste3 = new ArrayList<String>();
 		
-		// ajout liste1 à liste2
+		// ajout liste1 à liste3
 		for (int i = 0; i < liste1.size(); i++) {
 			liste3.add(liste1.get(i));
 		}
 		
-		// ajout liste2 à liste2
-		for (int i = 0; i < liste1.size(); i++) {
+		// ajout liste2 à liste3
+		for (int i = 0; i < liste2.size(); i++) {
 			liste3.add(liste2.get(i));
 		}
 		
