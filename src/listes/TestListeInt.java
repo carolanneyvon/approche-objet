@@ -2,7 +2,6 @@ package listes;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 
 public class TestListeInt {
@@ -47,7 +46,7 @@ public class TestListeInt {
 		
 		// recherche des éléments - pour les passer en +
 		// la fonction Math.abs() retourne la valeur absolue d'un nombre
-		// set pour réécrire la valeur
+		// set pour réécrire la valeur, modifier un élément (index, valeur)
 		for (int i = 0; i < listeEntier.size(); i++) {
 			if (listeEntier.get(i) < 0) {
 				listeEntier.set(i, Math.abs((Integer) listeEntier.get(i)));
