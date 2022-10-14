@@ -45,7 +45,7 @@ public class TestListeInt {
 		System.out.println("ListeEntier (sans le min) : " + listeEntier);
 		
 		// recherche des éléments - pour les passer en +
-		// la fonction Math.abs() retourne la valeur absolue d'un nombre
+		// la méthode Math.abs() retourne la valeur absolue d'un nombre
 		// set pour réécrire la valeur, modifier un élément (index, valeur)
 		for (int i = 0; i < listeEntier.size(); i++) {
 			if (listeEntier.get(i) < 0) {
