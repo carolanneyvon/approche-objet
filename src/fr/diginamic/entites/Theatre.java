@@ -4,10 +4,12 @@ public class Theatre {
 	protected String nom;
 	protected int capaciteMax;
 	protected int nbInscrit;
-	protected int recetteTotale;
+	//protected int recetteTotale;
+	protected double recetteTotale;
+
 	
 	// constructeur
-	public Theatre(String nom, int capaciteMax, int nbInscrit, int recetteTotale) {
+	public Theatre(String nom, int capaciteMax, int nbInscrit, double recetteTotale) {
 		super();
 		this.nom = nom;
 		this.capaciteMax = capaciteMax;
@@ -16,10 +18,11 @@ public class Theatre {
 	}
 
 	// méthode inscrire
-	public void getInscrire(int client, int prix) {
+	public void getInscrire(int client, double prix) {
 		if ((this.nbInscrit + client) <= capaciteMax) {
 			this.nbInscrit += client;
 			this.recetteTotale = this.nbInscrit * prix;
+			//this.recetteTotale = (int)(this.nbInscrit * prix);
 			System.out.println("Nombre de client inscrit : "+nbInscrit+ "/"+ capaciteMax);
 
 		}
@@ -53,11 +56,11 @@ public class Theatre {
 		this.nbInscrit = nbInscrit;
 	}
 
-	public int getRecetteTotale() {
+	public double getRecetteTotale() {
 		return recetteTotale;
 	}
 
-	public void setRecetteTotale(int recetteTotale) {
+	public void setRecetteTotale(double recetteTotale) {
 		this.recetteTotale = recetteTotale;
 	}
 	
