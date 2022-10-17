@@ -32,12 +32,18 @@ public class MapVilles2 {
 			mapVilles2.put(a.getNom(), a);
 			System.out.println(a);
 		}
+		
+		// autre écriture correction
+//		for (Ville v: liste) {
+//			mapVilles2.put(v.getNom(), v);	
+//		}
+
 		System.out.println("--------------------");
 		System.out.println("Taille de la map : "+mapVilles2.size());
 
 		// ville ayant le plus petit nombre d'habitants
 		String minVille = "";
-		double minHabitants = Double.MAX_VALUE;
+		Integer minHabitants = Integer.MAX_VALUE;
 		
 		for (String cle : mapVilles2.keySet()) {
 			if (mapVilles2.get(cle).getNbHabitants() < minHabitants) {
