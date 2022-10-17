@@ -36,13 +36,13 @@ public class TestVille {
 		for (Ville u : liste) {
 			System.out.println(u);
 		}
-		
+
 		// avec Comparator
-				System.out.println("-----Avec ComparatorNom---------------");
-				Collections.sort(liste, new ComparatorNom());
-				for (Ville u : liste) {
-					System.out.println(u);
-				}
+		System.out.println("-----Avec ComparatorNom---------------");
+		Collections.sort(liste, new ComparatorNom());
+		for (Ville u : liste) {
+			System.out.println(u);
+		}
 
 	}
 
