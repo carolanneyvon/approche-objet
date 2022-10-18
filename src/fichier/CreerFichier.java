@@ -31,7 +31,7 @@ public class CreerFichier {
 		Files.write(newPath, nvFichier);
 
 		// Lecture et affichage du nouveau fichier
-		List<String> lignes2 = Files.readAllLines(path, StandardCharsets.UTF_8);
+		List<String> lignes2 = Files.readAllLines(newPath, StandardCharsets.UTF_8);
 		for (String l : lignes2) {
 			System.out.println(l);
 		}
