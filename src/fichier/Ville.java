@@ -17,7 +17,7 @@ public class Ville {
 
 	@Override
 	public String toString() {
-		return "Ville [nom=" + nom + ", departement=" + departement + ", region=" + region + ", population="
+		return "Ville [nom = " + nom + ", departement = " + departement + ", region = " + region + ", population = "
 				+ population + "]";
 	}
 

@@ -15,6 +15,7 @@ public class LectureFichier {
 	public static void main(String[] args) throws IOException {
 
 		// Exercice LireFichier
+		
 		String cheminStr = "C:\\Caro\\CDA\\java\\Supports\\7 - Langage Java - Approche Objet\\J5 & J6 - Collections et fichiers\\TP\\recensement.csv";
 		Path path = Paths.get(cheminStr);
 
@@ -25,6 +26,7 @@ public class LectureFichier {
 		}
 
 		// Exercice LireFichierAvecInstanciation
+		
 		// ArrayList vide
 				ArrayList<Ville> listeVilles = new ArrayList<>();
 		
@@ -40,8 +42,12 @@ public class LectureFichier {
 			
 			Ville v = new Ville(nom, departement, region, population);
 			listeVilles.add(v);
+			System.out.println(listeVilles.get(i-1));
 		}
 		System.out.println("Nombre de Ville : "+listeVilles.size());
+		
+		
+		// Exercice GenererFichier
 	}
 
 }
