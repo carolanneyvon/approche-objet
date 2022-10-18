@@ -1,5 +1,7 @@
 package fr.diginamic.chaines;
 
+import fr.diginamic.entites.Salarie;
+
 public class ManipulationChaine {
 	public static void main(String[] args) {
 		String chaine = "Durand;Marcel;2 523.5";
@@ -27,6 +29,18 @@ public class ManipulationChaine {
 		System.out.println("Nom de famille en minuscules: "+nomFamille.toLowerCase());
 		
 		// 7) découper la chaine de caractères en morceaux
+		System.out.println("--------------------");
+		System.out.println("Tableau obtenu avec la méthode split : ");
+		String decoupe[]=chaine.split(";");
+		for (int i=0; i<decoupe.length; i++) {
+			System.out.println(decoupe[i]);
+		}
 		
+		// 8) classe Salarie dans le package entites
+		
+		// 8) instance de Salarie
+		Salarie salarie1 = new Salarie(decoupe[0],decoupe[1],Double.parseDouble(decoupe[2].replace(" ","")));
+		System.out.println("--------------------");
+		System.out.println(salarie1);
 	}
 }
