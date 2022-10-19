@@ -16,7 +16,7 @@ public class TestStringBuilder {
 		// fin chronométrage
 		long fin = System.currentTimeMillis();
 		
-		System.out.println("Temps écoulé en millisecondes builder :" + (fin - debut)); // 12ms
+		System.out.println("Temps écoulé en millisecondes builder :" + (fin - debut)); // 12ms - 9ms
 
 		// avec String et l’opérateur de concaténation +
 		String string = "";
@@ -30,7 +30,7 @@ public class TestStringBuilder {
 		// fin chronométrage
 		long fin2 = System.currentTimeMillis();
 
-		System.out.println("Temps écoulé en millisecondes string :" + (fin2 - debut2)); // 10782ms
+		System.out.println("Temps écoulé en millisecondes string :" + (fin2 - debut2)); // 10782ms - 8728ms
 	}
 
 }
