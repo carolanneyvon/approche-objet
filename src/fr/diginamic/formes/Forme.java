@@ -6,5 +6,5 @@ public abstract class Forme {
 	public abstract double calculerSurface();
 
 	// méthode abstraite calculerSPerimetre
-	public abstract double calculerSPerimetre();
+	public abstract double calculerPerimetre();
 }

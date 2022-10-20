@@ -11,7 +11,7 @@ public class Cercle extends Forme{
 	}
 
 	// calcul du périmètre du cercle
-	public double calculerSPerimetre() {
+	public double calculerPerimetre() {
 		return 2 * PI * rayon;
 	}
 
@@ -22,7 +22,7 @@ public class Cercle extends Forme{
 
 	@Override
 	public String toString() {
-		return "Rayon : " + rayon + " | Perimètre : " + calculerSPerimetre() + " | Surface : " + calculerSurface();
+		return "Rayon : " + rayon + " | Perimètre : " + calculerPerimetre() + " | Surface : " + calculerSurface();
 	}
 
 	// getters et setters

@@ -1,9 +1,9 @@
 package fr.diginamic.formes;
 
-public class Rectangle extends Forme{
+public class Rectangle extends Forme {
 	private double longueur;
 	private double largeur;
-	
+
 	public Rectangle(double longueur, double largeur) {
 		super();
 		this.longueur = longueur;
@@ -12,12 +12,12 @@ public class Rectangle extends Forme{
 
 	@Override
 	public double calculerSurface() {
-		return (2 * longueur) + (2 * largeur);
+		return longueur * largeur;
 	}
 
 	@Override
-	public double calculerSPerimetre() {
-		return longueur * largeur;
+	public double calculerPerimetre() {
+		return (largeur + longueur) * 2;
 	}
 
 	// getters et setters
@@ -36,7 +36,5 @@ public class Rectangle extends Forme{
 	public void setLargeur(double largeur) {
 		this.largeur = largeur;
 	}
-	
-	
-	
+
 }
