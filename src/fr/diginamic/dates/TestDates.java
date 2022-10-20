@@ -13,6 +13,15 @@ public class TestDates {
 		SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 		String dateFormat = format.format(date);
 		System.out.println(dateFormat);
+		
+		Date date2 = new Date(116, 4, 19, 23, 59, 30);
+		SimpleDateFormat format2 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		String dateFormat2 = format2.format(date2);
+		System.out.println(dateFormat2);
+		
+		Date dateMoment = new Date();
+		String dateMomentFormat = format2.format(dateMoment);
+		System.out.println(dateMomentFormat);
 
 	}
 
